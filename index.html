@@ -34,8 +34,7 @@
       var i = 0;
 
       for ( var id in tabLinks ) {
-        if (id === 'resume') tabLinks[id].onclick = openResume;
-        else tabLinks[id].onclick = showTab;
+        tabLinks[id].onclick = showTab;
         tabLinks[id].onfocus = function() { this.blur() };
         if ( i == 0 ) tabLinks[id].className = 'selected';
         i++;
@@ -90,7 +89,6 @@
     <h1 class="hdg hdg_1 a-center">Joyce Zhu</h1>
     <ul id="tabs">
       <li><a href="#summary">Main page</a></li>
-      <li><a href="#resume">Resumé</a></li>
       <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
       <li><a href="#awards">Awards</a></li>
@@ -106,17 +104,18 @@
       <div class="media-bd">
         <h3 class="hdg a-center" style="font-size:16px;"><i>Joyce Zhu</i></h3>
         <h3 class="hdg a-center" style="font-size:16px;"><i>University of Rochester (Class of 2017)</i></h3>
-        </br>
+        <br />
+        <h1 class="a-center"><a href="Joyce_Zhu_Software_Development_Internship_Resume.pdf" target="_blank">Resumé</a></h1>
+        <br />
         <ul class="vList vList_loose">
           
-          <li id="tldr" class="a-center large" style="font-size:16px;"><strong>I'm interested in full-time software engineering opportunities in the Palo Alto area after my graduation in spring 2017. If you're interested in adding a hard-working, quick-learning worker to your team, please feel free to <a href="Joyce_Zhu_Software_Development_Internship_Resume.pdf" target="_blank">grab my resume</a> and <a href="mailto:jzhu29@u.rochester.edu">reach out!</a></strong></li>
+          <li id="tldr" class="a-center large" style="font-size:16px;"><strong>I'm interested in full-time software engineering opportunities in the Palo Alto area after my graduation in spring 2017. If you're interested in adding a hard-working, quick-learning worker to your team, please feel free to grab my resumé above and <a href="mailto:jzhu29@u.rochester.edu">reach out!</a></strong></li>
 
           <li id="blurb1" class="large" style="font-size:16px;"><p>Hi! I'm currently an intern at <a href="http://www.edx.org" target="_blank">edX</a> and an undergraduate at <a href="http://www.rochester.edu/" target="_blank">University of Rochester</a>; I'll graduate in 2017 with a Bachelor of Science in Computer Science and a Bachelor of Arts in Music. Previously, I've interned at a variety of places, published a first-author research paper, and helped run an undergraduate course of 100+ students while keeping up a great GPA.</p></li>
         </ul>
       </div>
     </div>
     </div>
-    <div class="tabContent" id="resume"></div>
     <div class="tabContent" id="education"><div>
      <h3 style="text-align:center;">Formal Education</h3>
       <p><a href="http://www.rochester.edu" target="_blank"><b>University of Rochester</b></a></p>
@@ -143,6 +142,8 @@
   <ul class="vList_loose">
   <li><a href="https://enrollment.rochester.edu/financial-aid/undergrads/#tab3" target="_blank"><b>Wilder Leadership Scholarship</b></a>
     <p>This major scholarship is awarded to incoming University of Rochester students who have shown overall excellence in both academics and extracurriculars and thus the ability to contribute to the University in their time there.</p></li>
+  <li><a href="http://cra.org/about/awards/outstanding-undergraduate-researcher-award/" target="_blank"><b>CRA Outstanding Undergraduate Researchers Award, 2016 Honorable Mention</b></a>
+    <p>This annual award given by the <a href="http://cra.org/" target="_blank">Computing Research Association</a> recognizes undergraduates in North American colleges and universities whose work demonstrates outstanding computing research potential.</p></li>
   <li><a href="https://www.rochester.edu/College/pbk/iotabook.html" target="_blank"><b>2014 Iota Book Award</b></a>
     <p>The Iota Book Award was given to 16 University of Rochester sophomore recipients out of a class of 1364; it recognizes outstanding performance at the beginning of a student's academic career at the university. Recipients are selected by the Iota Chapter of Phi Beta Kappa based on scholarly achievement, humanistic values, co-curricular activities, and leadership potential as determined by academic records and nominations from professors, administrators, and university staff members.</p></li>
   <li><a href="http://www.nationalmerit.org/" target="_blank"><b>National Merit Scholarship</b></a>
@@ -152,11 +153,11 @@
 
     <div class="tabContent" id="contact">
       <ul class="vList vList_loose">
-        <li><h4>You can click on the icons below to directly email me or go to my LinkedIn and GitHub pages. Here's the text for all the links if you want to copy and paste them:</h4></li>
+        <li><h4>You can click on the icons below to directly email me or go to my LinkedIn and GitHub pages. Here's the text for all the links if you would like to copy and paste them:</h4></li>
         <li><em>Email:</em><a href="mailto:jzhu29@rochester.edu"> jzhu29@rochester.edu</a></li>
         <li><em>LinkedIn:</em><a href="https://www.linkedin.com/in/joyce-zhu-57a036a1" target="_blank"> https://www.linkedin.com/in/joyce-zhu-57a036a1</a></li>
         <li><em>GitHub:</em><a href="http://github.com/JoyceZhu" target="_blank"> http://github.com/JoyceZhu</a></li>
-        <li><em>Phone:</em> I would prefer that you reach out over email, but if you really need to call me, my number's in my resume. (Sorry, I'm not a big fan of someone scraping my phone number and sending me spam calls about Bermuda cruises every 30 minutes... )</li>
+        <li><em>Phone:</em> I would prefer that you reach out over email, but if you really need to call me, my number's in my resumé. (Sorry, I'm not a big fan of someone scraping my phone number and sending me spam calls about Bermuda cruises every 30 minutes... )</li>
       </ul>
     </div>
 
