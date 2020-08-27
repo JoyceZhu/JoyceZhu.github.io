@@ -6,10 +6,14 @@ html {
 body {
   height: 100%;
   background-color: #b0e0e6;
-  font-family: 'Libre Caslon Text', serif;
+  font-family: "Libre Caslon Text", serif;
   font-size: 16pt;
   margin: 0;
   padding: 0;
+}
+
+h1 {
+  font-family: "Clarendon", sans-serif;
 }
 
 h1,
@@ -74,6 +78,10 @@ a:hover {
   background-color: #d5e2f2;
 }
 
+.media {
+  display: flex;
+}
+
 .media-img {
   float: left;
   position: relative;
@@ -89,7 +97,6 @@ a:hover {
 }
 
 .media-bd {
-  font-size: 14px;
   line-height: 1.3;
 }
 
@@ -97,7 +104,6 @@ a:hover {
   margin-top: 20px;
   border-bottom: 1px solid #ededed;
   border-top: 1px solid #ededed;
-  font-size: 12px;
   text-align: center;
   color: #6a6a6a;
   padding: 40px 0;
@@ -108,7 +114,7 @@ a:hover {
 }
 
 .large {
-  font-size: large;
+  font-size: 18px;
 }
 
 .footer-container {
@@ -172,13 +178,6 @@ img.vAlign {
   margin-top: 0 !important;
 }
 
-.projectDesc {
-}
-
-.projectTitle {
-  font-size: 16pt;
-}
-
 .justify {
   text-align: justify;
   clear: both;
@@ -212,10 +211,6 @@ img.vAlign {
 
 #resumeIcon {
   padding-right: 2px;
-}
-
-#summary {
-  font-size: 11pt;
 }
 
 #publications li {
