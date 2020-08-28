@@ -14,29 +14,24 @@
     <script src="./tabs.js" type="text/javascript"></script>
   </head>
   <body onload="init()">
-    <h1 class="hdg hdg_1 a-center">Joyce Zhu</h1>
+    <h1 class="a-center">Joyce Zhu</h1>
     <ul id="tabs">
       <li><a href="#summary">Main page</a></li>
-      <li><a href="#education">Education</a></li>
       <li><a href="#experience">Experience</a></li>
+      <li><a href="#education">Education</a></li>
       <li><a href="#awards">Awards</a></li>
       <li><a href="#writings">Writings</a></li>
     </ul>
 
 <div class="tabContent" id="summary">
       <div class="media">
-      <div class="media-img media-img_push">
-        <img id="face" src="face.jpg" alt="Picture of Joyce Zhu looking very professional" height="200" width="215" align="left"/>
-      </div>
+      <img id="face" class="media-img_push" src="face.jpg" alt="Picture of Joyce Zhu looking very professional" height="200" width="215" align="left"/>
       <div class="media-bd">
-        <h3 class="a-center"><a href="Joyce_Zhu_Software_Engineering_Resume.pdf" target="_blank">Resumé</a></h3>
+        <h2><a href="Joyce_Zhu_Software_Engineering_Resume.pdf" target="_blank">Resumé</a></h2>
+        <a href="./purpleair.html">Air Quality in Palo Alto</a>
         <br />
-        <a href="./purpleair.html" style="padding-left: 40px">Air Quality in Palo Alto</a>
-        <br />
-        <ul class="vList vList_loose">
-          <li class="large"> I'm currently a software engineer at <a href="https://quip.com/" target="_blank">Quip</a>.</li>
-          <li><p>Hi! In 2017, I graduated from the <a href="http://www.rochester.edu/" target="_blank">University of Rochester</a> with a Bachelor of Science in Computer Science and a Bachelor of Arts in Music, <em>magna cum laude</em> and with highest distinction in both degrees.</p></li>
-        </ul>
+       <p class="large"> I'm currently a software engineer at <a href="https://quip.com/" target="_blank">Quip</a>.</p>
+       <p>Hi! In 2017, I graduated from the <a href="http://www.rochester.edu/" target="_blank">University of Rochester</a> with a Bachelor of Science in Computer Science and a Bachelor of Arts in Music, <em>magna cum laude</em> and with highest distinction in both degrees.</p>
       </div>
     </div>
     </div>
@@ -61,7 +56,7 @@
     </div>
 
     <div class="tabContent" id="awards">
-  <p style="text-align:center;font-size:18px;"><em>Scholarships and Awards</em></p>
+  <h3 style="text-align:center">Scholarships and Awards</h3>
   <div>
   <ul class="vList_loose">
   <li><a href="https://www.hajim.rochester.edu/news/2016-12-09_wells_award.html" target="_blank"><b>2016 Robert L. Wells Prize</b></a>
@@ -78,30 +73,37 @@
     </div>
 
     <div class="tabContent" id="experience">
-      <p style="text-align:center;font-size:18px;"><em>Software Development Experience</em></p>
+      <h3 style="text-align:center">Software Development Experience</h3>
       <div>
-        <p><a href="http://www.edx.org" target="_blank" style="font-size:16px;"><b>edX</b></a></p>
-        <ul style="font-size:16px;">
+
+        <p><a href="http://www.quip.com" target="_blank"><b>Quip (the productivity tool, not the toothbrush company)</b></a></p>
+        <ul>
+          <li><b><em>Software Engineer, summer 2017 - today</em></b></li>
+          <li>Currently the Accessibility TL.</li>
+        </ul>
+
+        <p><a href="http://www.edx.org" target="_blank"><b>edX</b></a></p>
+        <ul>
           <li><b><em>Software Engineering Intern, summer 2016</em></b></li>
-          <li>As part of the Solutions team, I'll be working with third parties to develop features for <a href="https://github.com/edx/edx-platform" target="_blank">open edX</a>, edX’s open source software initiative.</li>
+          <li>Migrated various endpoints off the monolithic legacy Open edX service onto the ecommerce microservice and overhauled the receipts page design to reflect several new features.</li>
         </ul>
 
         <p><a href="http://www.pixability.com" target="_blank">Pixability</a></p>
-        <ul style="font-size:14px;">
+        <ul>
           <li><b><em>Python Software Engineering Intern, summer 2015 (full time), September 2015 - April 2016 (part-time remote work)</em></b></li>
           <li>Designed and implemented a JSON-based query language for users to create query filters of arbitrary complexity when sending HTTP requests to exposed endpoints to retrieve a subset of records from a MySQL database. This mini-query language continues to be in use at Pixability; engineers have expanded its capabilities and it is now a core library in the backend toolkit.</li>
           <li>Extended these exposed endpoints’ sorting capabilities to allow users to sort on any computed metric; previously, users could only sort on a restricted subset of metrics corresponding with existing database column names.</li>
         </ul>
 
         <p><a href="http://bertoldi.seas.harvard.edu" target="_blank">Bertoldi Group</a>, <a href="http://www.seas.harvard.edu/" target="_blank">Harvard School of Engineering and Applied Sciences</a></p>
-        <ul style="font-size:14px;">
+        <ul>
           <li><b><em>Programming Intern/Visiting Scholar, summer 2014</em></b></li>
           <li>Taught myself rudimentary shell scripting, then wrote bash and Python scripts to help the research group automate the generation and submission of multiple jobs with different parameters to a high-performance computing cluster using the SLURM job scheduling system, then store all jobs' outputs in an easily-parsed central file.</li>
           <li>Wrote a <a href="http://bertoldi.seas.harvard.edu/downloads" target="_blank">shell scripting crash guide</a> for scientists and researchers who are moderately familiar with Linux and performing tasks with the command line.</li>
         </ul>
 
         <p><a href="http://www.casa-systems.com/" target="_blank">Casa Systems</a></p>
-        <ul style="font-size:14px;">
+        <ul>
           <li><b><em>Software Development Intern, summer 2012</em></b></li>
           <li>Taught myself the basics of programming in C, then expanded the capabilities of an existing video streaming program to handle 1000 simultaneous streams instead of just 1 in both IP unicast and multicast applications. Engineers are regularly using this improved streamer for product development and testing.</li>
         </ul>
@@ -109,23 +111,23 @@
     </div>
 
   <div class="tabContent" id="writings">
-    <p style="text-align:center;font-size:18px;"><em>Publications and other stuff I've written</em></p>
+    <h3 style="text-align:center">Publications and other stuff I've written</h3>
     <ul class="vList_loose">
-      <li id="pg" class="blab" style="font-size:14px;">
+      <li id="pg" class="blab">
       <a href="http://pgbovine.net/publications/computer-programming-MOOC-discussion-forum-design_VLHCC-2015.pdf" target="_blank">Toward a Domain-Specific Visual Discussion Forum for Learning Computer Programming: An Empirical Study of a Popular MOOC Forum.</a> <b>Joyce Zhu</b>, Jeremy Warner, Mitchell Gordon, Jeffery White, Renan Zanelatto, Philip J. Guo. <em>IEEE Symposium on Visual Languages and Human-Centric Computing (VL/HCC), Oct 2015.</em> -- My work with <a href="http://pgbovine.net/index.html" target="_blank">Professor Philip Guo</a> culminated in this first-author paper on how traditional online forum design can be improved to suit the needs of MOOC students learning to program. </li>
-      <li id="shell" class="blab" style="font-size:14px;">
+      <li id="shell" class="blab">
       <a href="http://bertoldi.seas.harvard.edu/downloads">Using shell scripts to parallelize running jobs in Abaqus</a> -- Some of the high-performing computing cluster bash submission scripts and the shell scripting crash course for scientists I wrote while visiting <a href="http://bertoldi.seas.harvard.edu/"" target="_blank">Katia Bertoldi's group</a> at Harvard.</li>
       </ul>
     </div>
 
-<footer class="footer">
+  <footer class="footer">
     <div class="footer-container">
      <ul class="hList footer-icons">
       <li><a href="mailto:joyceqzhu@gmail.com" target="_blank" title="Email"><img src="email.png" alt="Email"></a></li>
       <li><a href="https://www.linkedin.com/in/joyce-zhu-57a036a1" target="_blank" title="LinkedIn"><img src="In-2C-66px-R.png" alt="LinkedIn"></a></li>
       <li><a href="http://github.com/JoyceZhu" target="_blank" title="GitHub"><img src="GitHub-Mark-64px.png" alt="GitHub"></a></li>
      </ul>
-  </div>
+    </div>
   </footer>
   </body>
 </html>

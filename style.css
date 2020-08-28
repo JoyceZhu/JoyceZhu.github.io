@@ -1,15 +1,7 @@
-/* #9EADCF, #DFE8FE, #889AC2*/
-html {
-  height: 100%;
-}
-
 body {
-  height: 100%;
   background-color: #b0e0e6;
   font-family: "Libre Caslon Text", serif;
   font-size: 16px;
-  margin: 0;
-  padding: 0;
 }
 
 h1 {
@@ -20,8 +12,6 @@ h1,
 h2,
 h3 {
   color: #333;
-  margin: 0;
-  padding: 0;
 }
 
 a {
@@ -40,60 +30,20 @@ a:hover {
   text-decoration: underline;
 }
 
-.content {
-  width: 70%;
-  max-width: 1200px;
-  margin: 0 auto;
-}
-
 .header {
   background-color: #4d72a1;
-}
-
-.hdgWrap {
-  text-transform: uppercase;
-  padding: 35px 0;
-}
-
-.hdg {
-  border-radius: 5px;
-  padding-left: 5px;
-  text-decoration: none;
-  font-weight: 900;
-}
-
-.h1 {
-  font-size: 30px;
-}
-
-.h2 {
-  font-size: 20px;
 }
 
 .small {
   text-align: center;
 }
 
-.hdg.highlight {
-  background-color: #d5e2f2;
-}
-
 .media {
   display: flex;
 }
 
-.media-img {
-  float: left;
-  position: relative;
-}
-
 .media-img_push {
   margin: 20px 25px 20px 20px;
-}
-
-.media-img > img {
-  display: block;
-  position: relative;
 }
 
 .media-bd {
@@ -106,7 +56,7 @@ a:hover {
   border-top: 1px solid #ededed;
   text-align: center;
   color: #6a6a6a;
-  padding: 40px 0;
+  padding: 10px 0;
 }
 
 .a-center {
@@ -152,9 +102,6 @@ img.vAlign {
 .hList > * {
   float: left;
   margin: 0 10px;
-}
-
-.projectDiv {
 }
 
 .projectIcon {
