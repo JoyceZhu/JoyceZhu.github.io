@@ -12,5 +12,6 @@
   },
   "[jsonc]": {
     "editor.formatOnSave": true
-  }
+  },
+  "html.autoClosingTags": true
 }

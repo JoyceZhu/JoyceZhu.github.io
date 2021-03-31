@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      html {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+        background-color: black;
+        color: white;
+        text-align: center;
+        font-size: 25px;
+        font-family: "Source Code Pro", monospace;
+      }
+      div {
+        display: flex;
+        flex-direction: column;
+      }
+    </style>
+    <script>
+      var userAgent = window.navigator.userAgent;
+      var platform = window.navigator.platform;
+      window.document.addEventListener("keydown", function (event) {
+        window.document.body.innerHTML = `
+    <h3>Keydown event with UA: ${userAgent}</h3>
+    <h3>Platform: ${platform}</h3>
+    <div>
+    <b>keyCode: ${event.keyCode}</b>
+    <br>&nbsp;&nbsp;
+    <b>key: ${event.key}</b>
+    <br>&nbsp;&nbsp;
+    <b>code: ${event.code}</b>
+    <br>&nbsp;&nbsp;
+    <b>shiftKey: ${event.shiftKey}</b>
+    </br>&nbsp;&nbsp;&nbsp;&nbsp;
+    <b>altKey: ${event.altKey}</b>
+    <br>&nbsp;&nbsp;&nbsp;
+    <b>ctrlKey: ${event.ctrlKey}</b>
+    <br>&nbsp;&nbsp;
+    <b>metaKey: ${event.metaKey}</b>
+    </div>
+  `;
+      });
+    </script>
+  </head>
+  <title>Keycode experimentation</title>
+  <body>
+    <div>Type here</div>
+  </body>
+</html>
