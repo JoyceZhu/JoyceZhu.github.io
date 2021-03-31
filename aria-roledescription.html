@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+  </head>
+  <title>aria-roledescription bug</title>
+
+  <body>
+    <article contenteditable="true">
+      <a
+        href="https://joycezhu.github.io"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-roledescription="GitHub link"
+        >Element with different role in editable node
+      </a>
+    </article>
+    <div>
+      <a
+        href="https://joycezhu.github.io"
+        target="_blank"
+        rel="noopener noreferrer"
+        aria-roledescription="GitHub link"
+        >Element with different role in non-editable node
+      </a>
+    </div>
+  </body>
+</html>
