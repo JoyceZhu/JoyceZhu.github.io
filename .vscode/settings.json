@@ -13,5 +13,13 @@
   "[jsonc]": {
     "editor.formatOnSave": true
   },
-  "html.autoClosingTags": true
+  "html.autoClosingTags": true,
+  "workbench.colorCustomizations": {
+    "activityBar.activeBackground": "#00d9ffa6",
+    "activityBar.background": "#8d16a5ce",
+    "statusBar.background": "#8d16a5ce",
+    "statusBarItem.hoverBackground": "#8d16a5ce",
+    "titleBar.activeBackground": "#8d16a5ce",
+    "titleBar.inactiveBackground": "#8d16a5ce"
+  }
 }
