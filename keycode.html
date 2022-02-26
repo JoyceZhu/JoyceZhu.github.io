@@ -52,6 +52,7 @@
   `;
       });
       window.document.addEventListener("contextmenu", function (event) {
+        window.document.body.innerHTML = `<h3>${event.target}</h3>`;
         event.preventDefault();
       });
     </script>
