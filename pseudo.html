@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <title>Pseudoelements</title>
+    <style>
+     body {
+         background: #20262E;
+         padding: 20px;
+         font-family: Helvetica;
+    }
+
+    .example {
+        background: #fff;
+        border-radius: 4px;
+        padding: 20px;
+        transition: all 0.2s;
+        text-align: center;
+    }
+
+    .example::before {
+        content: "extra words and stuff";
+    }
+    </style>
+  </head>
+  <body>
+    <div class="example">
+      Some text in a DOM Node
+   </div>
+  </body>
+</html>
+
