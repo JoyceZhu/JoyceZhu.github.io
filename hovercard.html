@@ -1,0 +1,75 @@
+<html lang="en">
+    <head>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta name="robots" content="noindex, nofollow" />
+    <meta name="googlebot" content="noindex, nofollow" />
+    <script src="./hovercard.js"></script>
+<title>Hovercard prototype</title>
+<style>
+    .sr-only {
+        position: absolute;
+        width: 1px;
+        height: 1px;
+        padding: 0;
+        overflow: hidden;
+        clip: rect(0, 0, 0, 0);
+        word-wrap: normal;
+        border: 0;
+    }
+    #hovercard {
+        width: 250px;
+        height: 300px;
+        margin-left: 10px;
+        margin-top: 5px;
+        border: 2px solid rebeccapurple;
+        padding: 20px 5px;
+        z-index: 10;
+        visibility: hidden;
+    }
+
+    #hovercard-trigger:focus::after {
+        /* Yes we need a better indicator in the UI. */
+        content: "hover me"
+    }
+
+    #first:first-child {
+        margin-bottom: 5px;
+    }
+</style>
+</head>
+<body>
+    <h1>Barebones accessible hovercard prototype</h1>
+    <button>Some stuff</button>
+    <p>When focused on hovercard trigger (the picture link below, copied from
+    GitHub's UI), use Alt+Up to trigger it.</p>
+    <p>Focus moves into the hovercard automatically and is trapped.</p>
+    <p>Use Esc to leave and restore focus to the hovercard trigger like a normal
+    dialog.</p>
+    <!-- This is a prototype and the code below is NOT a thorough replacement
+    for all native button functionality -->
+    <a role="button" aria-roledescription="User hovercard"
+    href="https://github.com/joycezhu"
+    data-hovercard-url="/users/joycezhu/hovercard"
+    id="hovercard-trigger">
+        <img src="https://avatars.githubusercontent.com/u/6251669?s=40&v=4"
+        alt="" size="40" height="40" width="40"/>
+    </a>
+    <!-- It's debatable if we want this guy to be modal. right now it's
+    focus-trapping so I just stuffed these semantics in there real quick -->
+    <div id="hovercard" role="dialog" aria-modal="true" aria-label="User hovercard information">
+        <span tabindex="0" aria-hidden="true" id="a11y-hidden-start"></span>
+         <a href="https://github.com/joycezhu" id="first">
+            <img
+         src="https://avatars.githubusercontent.com/u/6251669?s=40&v=4" alt=""
+         size="40" height="40" width="40" />
+        </a>
+        <button>Button which does nothing</button>
+        <p>A commit hash or something else static idk</p>
+        <button>Another do-nothing button</button>
+        <a id="last"
+        href="https://github.com/github/cat/commit/1a802a6340d52a177da4ba631ecd9df3563aa1f7">fix
+        spelling or something, actual copied commit message</a>
+        <span tabindex="0" aria-hidden="true" id="a11y-hidden-end"></span>
+    </div>
+</body>
+</html>
