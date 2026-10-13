@@ -9,16 +9,22 @@
   --border: light-dark(#d1d9e0, #3d444d);
   --control: light-dark(#59636e, #656c76);
   --button-text: light-dark(#ffffff, #0d1117);
+  --light-logo-display: block;
+  --dark-logo-display: none;
 }
 
 @media (prefers-color-scheme: dark) {
   :root:not([data-theme="light"]) {
     color-scheme: dark;
+    --light-logo-display: none;
+    --dark-logo-display: block;
   }
 }
 
 :root[data-theme="dark"] {
   color-scheme: dark;
+  --light-logo-display: none;
+  --dark-logo-display: block;
 }
 
 * {
@@ -221,20 +227,37 @@ h1 {
   border-top: 1px solid var(--border);
 }
 
-.site-footer ul {
+.site-footer nav {
   display: flex;
   flex-wrap: wrap;
   gap: 0.25rem 2rem;
-  margin: 0;
-  padding: 0;
-  list-style: none;
 }
 
 .site-footer a {
   display: inline-flex;
   align-items: center;
+  gap: 0.5rem;
   min-height: 44px;
   font-size: 0.875rem;
+}
+
+.social-icon {
+  flex-shrink: 0;
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.logo-light {
+  display: var(--light-logo-display);
+}
+
+.logo-dark {
+  display: var(--dark-logo-display);
+}
+
+.site-footer .lucide {
+  flex-shrink: 0;
 }
 
 @media (max-width: 40rem) {
